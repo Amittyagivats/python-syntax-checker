@@ -1,9 +1,13 @@
 name: Python Syntax Checker Job
-on: push
+on: [push]
+
 jobs:
-  pythSyntaxCheckerJob:
-    
+  build:
+  
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checking Python Syntax in code
-      - uses: cclauss/Find-Python-syntax-errors-action@main
+    - name: checkout code
+      uses: actions/checkout@v2
+    - name: Checking Python Syntax in code
+      uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
