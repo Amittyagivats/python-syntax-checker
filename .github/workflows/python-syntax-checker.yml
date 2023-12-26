@@ -9,6 +9,10 @@ jobs:
     steps:
     - name: checkout code
       uses: actions/checkout@v2
+      with:
+        repository: apache/tomcat
+        ref: master
+        path: ./tomcat
     - name: Checking Python Syntax in code
       uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
     - name: Adding docker image
