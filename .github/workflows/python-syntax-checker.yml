@@ -11,3 +11,5 @@ jobs:
       uses: actions/checkout@v2
     - name: Checking Python Syntax in code
       uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
+    - name: Adding docker image
+      uses: docker://Hello-World@latest
