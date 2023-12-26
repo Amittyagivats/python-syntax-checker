@@ -15,5 +15,3 @@ jobs:
         path: ./tomcat
     - name: Checking Python Syntax in code
       uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
-    - name: Adding docker image
-      uses: docker://hello-world@latest
